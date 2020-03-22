@@ -1,0 +1,10 @@
+
+#sudo apt install python3
+
+sudo apt-get install -y python-pip
+
+pip install lxml setuptools pyquery
+
+sudo apt-get install -y python3-pip
+
+pip3 install lxml setuptools pyquery

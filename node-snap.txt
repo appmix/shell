@@ -1,0 +1,11 @@
+
+sudo snap install node --classic --channel 9/stable 
+
+sudo chown -R $USER:$(id -gn $USER) /home/user/.config
+
+sudo snap refresh node --channel=8/stable
+
+sudo snap switch node --edge
+
+sudo apt-get install build-essential  -y
+

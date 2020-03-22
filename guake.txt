@@ -1,0 +1,5 @@
+
+sudo apt-get install guake
+sudo mkdir /etc/gconf/schemas
+cd /etc/gconf/schemas/
+sudo ln -s /usr/share/gconf/schemas/guake.schemas

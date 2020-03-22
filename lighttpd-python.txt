@@ -1,0 +1,11 @@
+# Python support trough fastcgi with web.py
+# http://webpy.infogami.com/
+fastcgi.server = ( "/code.py" => (( 
+   "socket" => "/tmp/py.socket",
+   "bin-path" => "/var/www/website.tld/htdocs/code.py",
+   "max-procs" => 1,
+   "bin-environment" => (
+     "REAL_SCRIPT_NAME" => ""
+   ),
+   "check-local" => "disable"
+)))

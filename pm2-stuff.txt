@@ -1,0 +1,22 @@
+https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps
+
+
+pm2 startup ubuntu
+sudo env PATH=$PATH:/usr/local/bin pm2 startup systemd -u safeuser --hp /home/safeuser
+
+useradd -s /bin/bash -m -d /home/safeuser -c "safe user" safeuser
+
+passwd safeuser
+
+usermod -aG sudo <username>
+
+# to allow 80
+sudo apt-get install libcap2-bin
+sudo setcap cap_net_bind_service=+ep /usr/local/bin/node
+
+pm2 start app.js
+
+sudo env PATH=$PATH:/usr/local/bin pm2 startup -u safeuser
+
+/etc/systemd/system/multi-user.target.wants/pm2-safeuser.service
+

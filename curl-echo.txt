@@ -1,0 +1,3 @@
+echo '{"text": "Hello world!"}' | curl -d @- https://some/url/
+
+echo '{"body":"This is my body message."}' | curl -H "Content-type: application/json" -d @- https://some/url/

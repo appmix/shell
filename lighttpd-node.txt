@@ -1,0 +1,27 @@
+yum -y erase httpd nginx
+yum -y install epel-release
+yum -y update
+yum -y install lighttpd
+
+
+First, make sure mod_proxy is installed and activated in your lighttpd config file. Afterwards, paste the following lines to your config file and amend them appropriate:
+
+$HTTP["host"] == "yourapp.yourhost.com" { 
+  proxy.server = (
+    "" => (( "host" => "127.0.0.1", 
+             "port" => 9001) // your Node.js app's port 
+    )
+  )
+Make sure to specify an IP address and not hostnames as this is a requirement of mod_proxy.
+
+Now you are ready to run your Node.js app. Your app will be available at https://yourapp.yourhost.com after restarting lighttpd.
+
+
+Make sure you enable lighttpd's mod_proxy first. To have all of the requests for test.com sent to the Node.js backend (assuming it's on localhost; correct?):
+
+$HTTP["host"] == "test.com" {
+  proxy.server  = ( "" => (
+    ( "host" => "127.0.0.1", "port" => 3000 )
+  ) )
+}
+

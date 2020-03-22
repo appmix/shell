@@ -1,0 +1,2 @@
+
+7z a -p -mx=9 -t7z -r test1.7z test-dir/

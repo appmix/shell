@@ -1,0 +1,7 @@
+I would argue that NodeJS (or ruby, or python, or perl, ...) is not a web server (regardless of the awesomeness of libraries such as express.js, socket.io, ...) , and can't compete with nginx, apache, lighttpd, ... at the very least in terms of reliability.
+
+Running NodeJS services, I would recommend using:
+
+nginx serving HTTPS (your HTTP headers, CSP policy, ...)
+PM2 driving your NodeJS processes (you'll be able to cluster them, clustered process can be reloaded in a way that would shorten service interruption, ...)
+Then again, using NodeJS as a frontend isn't unusual.

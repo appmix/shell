@@ -1,0 +1,2 @@
+#!/bin/bash
+apt install apache2 libapache2-mod-php php-dom php-mbstring -y

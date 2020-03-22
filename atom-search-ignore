@@ -1,0 +1,12 @@
+Edit -> Config...
+
+config.cson
+
+"*":
+  core:
+    ignoredNames: [
+      ".git"
+      "node_modules"
+      "dist"
+      "build"
+    ]

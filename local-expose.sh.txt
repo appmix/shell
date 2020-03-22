@@ -1,0 +1,13 @@
+ssh -nN -R 80:localhost:80 user@1.2.3.4
+
+Test
+
+Listen on the destination port of the workstation :
+
+netcat -l -p 8889
+
+Send message from anywhere in the world :
+
+echo “abc” | nc -v remoteserver 8888
+
+You should receive “abc” in your workstation’s terminal.

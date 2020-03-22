@@ -1,0 +1,26 @@
+  100  sudo apt-get install -y ssmtp
+  101  sudo apt-get install -y postfix
+  102  sudo nano /etc/postfix/main.cf
+  103  sudo nano /etc/postfix/
+  104  sudo chmod 777 /etc/postfix/sasl_passwd
+  105  sudo postmap /etc/postfix/sasl_passwd
+  107  sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules
+  108  cat /etc/ssl/certs/thawte_Primary_Root_CA/pem | sudo tee -a /etc/postfix/cacert.pem
+  109  ls /etc/ssl/certs/
+  110  ls /etc/ssl/certs/ | grep Th
+  111  cat /etc/ssl/certs/thawte_Primary_Root_CA.pem | sudo tee -a /etc/postfix/cacert.pem
+  112  sudo /etc/init.d/postfix reload
+  114  less /var/log/mail.log
+  115  sudo postmap /etc/postfix/sasl_passwd
+  116  sudo nano /etc/postfix/sasl_passwd
+  117  sudo chmod 777 /etc/postfix/sasl_passwd
+  118  sudo nano /etc/postfix/main.cf
+  119  sudo postmap /etc/postfix/sasl_passwd
+  120  sudo nano /etc/postfix/main.cf
+  122  cat /etc/ssl/certs/thawte_Primary_Root_CA.pem | sudo tee -a /etc/postfix/cacert.pem
+  123  cat /etc/postfix/cacert.pem
+  125  nano /etc/postfix/cacert.pem
+  127  sudo /etc/init.d/postfix reload
+  128  echo "Test mail text" | mail -s "Test Mail" <email>
+  130  less /var/log/mail.log
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+add-apt-repository ppa:linuxuprising/java -y
+apt update
+apt install -y oracle-java13-installer
+apt install -y oracle-java13-set-default

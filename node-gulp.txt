@@ -1,0 +1,43 @@
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+Alternatively, for Node.js 10:
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+Then:
+
+sudo apt-get install -y build-essential
+
+---
+
+## Use n module from npm in order to upgrade node
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+--or--
+sudo n latest
+
+#update npm
+npm install npm@latest -g
+
+
+------------------
+Gulp Installation
+
+npm install gulp-cli -g
+
+For global use with slush
+Install gulp-install as a dependency:
+
+npm install --save gulp-install
+For local use with gulp
+Install gulp-install as a development dependency:
+
+npm install --save-dev gulp-install
+
+++
+https://www.youtube.com/watch?v=9Ih0dE2QJL8
+

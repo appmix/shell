@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo apt-get install -y libglfw3-dev libgles2-mesa-dev
+# gcc triangle.c -lGLESv2 -lglfw
+
+# glTexSubImage2D to update some of pixels of texture, and then render texture to framebuffer.
+

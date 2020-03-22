@@ -1,0 +1,5 @@
+service mysqld status
+
+sudo systemctl start mysqld
+
+sudo grep 'temporary password' /var/log/mysqld.log

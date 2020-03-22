@@ -1,0 +1,4 @@
+
+pa make:model Some -m
+
+pa make:controller SomeController -r

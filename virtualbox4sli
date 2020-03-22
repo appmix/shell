@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "deb https://download.virtualbox.org/virtualbox/debian stretch contrib" >> /etc/apt/sources.list
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+apt update
+apt install virtualbox-6.0 -y

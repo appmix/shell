@@ -1,0 +1,9 @@
+sudo vi /etc/default/grub
+
+GRUB_CMDLINE_LINUX="text"
+
+GRUB_TERMINAL=console
+
+sudo update-grub
+
+sudo systemctl set-default multi-user.target

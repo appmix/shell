@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo apt update && apt install -y curl mc sshpass zip ssh htop

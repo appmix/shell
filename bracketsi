@@ -1,0 +1,4 @@
+#!/bin/bash
+add-apt-repository ppa:webupd8team/brackets -y
+apt-get update
+apt-get install brackets -y

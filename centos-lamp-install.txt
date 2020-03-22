@@ -1,0 +1,3 @@
+https://support.rackspace.com/how-to/centos-6-apache-and-php-install/
+
+sudo yum install php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml

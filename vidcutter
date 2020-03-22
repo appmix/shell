@@ -1,0 +1,4 @@
+#!/bin/bash
+add-apt-repository ppa:ozmartian/apps -y
+apt update
+apt install vidcutter qml-module-qtmultimedia -y

@@ -1,0 +1,3 @@
+#/bin/bash
+pkg i mc -y
+termux-setup-storage

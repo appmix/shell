@@ -1,0 +1,4 @@
+#/bin/bash
+add-apt-repository ppa:leaningtech-dev/cheerp-ppa -y
+apt-get update
+apt-get install cheerp-core -y
