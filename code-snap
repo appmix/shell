@@ -1,0 +1,4 @@
+#!/bin/bash
+dnf install -y snapd
+ln -s /var/lib/snapd/snap /snap
+snap install --classic code
