@@ -1,5 +1,3 @@
 #!/bin/bash
 dnf install -y snapd
 ln -s /var/lib/snapd/snap /snap
-sleep 15
-snap install --classic code
