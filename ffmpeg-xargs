@@ -1,2 +1,4 @@
 ls -1 | sed -e 's/\.mp4$//' | xargs -I {} ffmpeg -i {}.mp4 -vf scale=360:202 -strict -2 z{}.mp4 ; ls | grep '^[^z]' | xargs -I {} rm {}
 
+ls -1 | sed -e 's/\.AVI$//' | xargs -I {} ffmpeg -i {}.mp4 -vf scale=360:202 -strict -2 z{}.AVI ; ls | grep '^[^z]' | xargs -I {} rm {}
+
