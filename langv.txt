@@ -1,0 +1,7 @@
+﻿LINUX
+
+Settinga -> Keyboard -> Layout-> uncheck "use system defaults"
+-> Change layout option "alt+shift" -> Add "" -> Close
+
+
+Down panel -> right mouse -> add new item -> Keyboard layouts
