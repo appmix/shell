@@ -1,0 +1,4 @@
+nano /etc/environment
+grep PATH /etc/environment
+export PATH=...
+source /etc/profile
